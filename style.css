@@ -81,9 +81,10 @@ body {
 /* Project Grid */
 .project-grid {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 20px;
-  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .project {
@@ -157,12 +158,6 @@ footer {
   font-size: 14px;
 }
 
-/* Responsive Grid */
-@media (max-width: 900px) {
-  .project {
-    width: calc(50% - 20px);
-  }
-}
 
 @media (max-width: 600px) {
   .project {
