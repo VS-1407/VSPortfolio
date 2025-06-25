@@ -52,8 +52,8 @@ body {
 
 .profile-card {
   position: relative;
-  width: 340px;
-  height: 340px;
+  width: 190px;
+  height: 190px;
   border-radius: 50%;
   margin-bottom: 20px;
   display: flex;
@@ -66,8 +66,8 @@ body {
   position: absolute;
   top: -6px;
   left: -6px;
-  width: 352px;
-  height: 352px;
+  width: 202px;
+  height: 202px;
   border-radius: 50%;
   background-image: conic-gradient(
     hsl(0, 100%, 50%),
@@ -92,8 +92,8 @@ body {
 }
 
 .profile-img {
-  width: 340px;
-  height: 340px;
+  width: 190px;
+  height: 190px;
   border-radius: 50%;
   object-fit: cover;
   border: 6px solid #0f2027;
