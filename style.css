@@ -81,7 +81,7 @@ body {
 /* Project Grid */
 .project-grid {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px;
   align-items: center;
   width: 100%;
