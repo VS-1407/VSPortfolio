@@ -81,7 +81,7 @@ body {
 .project-grid {
   display: flex;
   flex-direction: column;
-  gap: 05px;
+  gap: 20px;
   align-items: center;
 }
 
@@ -89,10 +89,10 @@ body {
   background: rgba(255,255,255,0.05);
   padding: 20px;
   border-radius: 15px;
-  width: calc(33.33% - 20px); /* 3 per row */
+  width: 90%;
+  max-width: 600px;
   text-align: left;
   transition: transform 0.3s ease;
-  min-width: 200px;
 }
 
 .project:hover {
