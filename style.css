@@ -50,58 +50,55 @@ body {
   position: relative;
 }
 
-.card {
+.profile-card {
   position: relative;
   width: 340px;
   height: 340px;
   border-radius: 50%;
-  overflow: hidden;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
-.bg {
+.bg-animation {
   position: absolute;
-  z-index: -1;
-  inset: -4px;
+  top: -6px;
+  left: -6px;
+  width: 352px;
+  height: 352px;
   border-radius: 50%;
-  overflow: hidden;
-}
-
-.bg::before {
-  content: '';
-  position: absolute;
-  aspect-ratio: 1 / 1;
-  top: 50%;
-  left: 50%;
-  min-width: 150%;
-  min-height: 150%;
   background-image: conic-gradient(
     hsl(0, 100%, 50%),
-    hsl(30, 100%, 50%),
     hsl(60, 100%, 50%),
-    hsl(90, 100%, 50%),
     hsl(120, 100%, 50%),
-    hsl(150, 100%, 50%),
     hsl(180, 100%, 50%),
-    hsl(210, 100%, 50%),
     hsl(240, 100%, 60%),
-    hsl(270, 100%, 50%),
     hsl(300, 100%, 50%),
-    hsl(330, 100%, 50%),
     hsl(360, 100%, 50%)
   );
-  animation: speeen 4s linear infinite;
-  transform-origin: 0% 0%;
-  transform: rotate(0deg) translate(-50%, -50%);
+  animation: spinBorder 4s linear infinite;
+  z-index: -1;
 }
 
-@keyframes speeen {
-  from {
-    transform: rotate(0deg) translate(-50%, -50%);
+@keyframes spinBorder {
+  0% {
+    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg) translate(-50%, -50%);
+  100% {
+    transform: rotate(360deg);
   }
+}
+
+.profile-img {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #0f2027;
+  box-shadow: 0 0 20px rgba(0, 255, 231, 0.5);
+  z-index: 2;
 }
 
 .profile-wrapper {
