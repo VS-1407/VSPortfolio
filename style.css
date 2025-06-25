@@ -81,7 +81,7 @@ body {
 /* Project Grid */
 .project-grid {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
   align-items: center;
   width: 100%;
@@ -156,6 +156,12 @@ footer {
   padding: 20px;
   background: rgba(0,0,0,0.3);
   font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .project {
+    width: calc(50% - 20px);
+  }
 }
 
 
